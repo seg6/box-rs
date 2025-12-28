@@ -1,0 +1,30 @@
+{
+  "crates": [
+    {
+      "display_name": "box",
+      "root_module": "src/main.rs",
+      "edition": "2024",
+      "deps": [],
+      "is_workspace_member": true,
+      "source": {
+        "include_dirs": ["src"],
+        "exclude_dirs": []
+      },
+      "cfg": [
+        "target_arch=\"x86_64\"",
+        "target_os=\"linux\"",
+        "target_env=\"gnu\"",
+        "target_pointer_width=\"64\"",
+        "unix"
+      ],
+      "target": "x86_64-unknown-linux-gnu",
+      "env": {},
+      "is_proc_macro": false,
+      "build": {
+        "label": "//box-rs:box",
+        "build_file": "Makefile",
+        "target_kind": "bin"
+      }
+    }
+  ]
+}
